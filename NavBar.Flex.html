@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar.Flex</title>
+
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+.navbar{
+  border: 1px solid rgb(0, 0, 0); 
+            background-color: rgb(20, 180, 220);
+            height: 15vh;
+            border-top-right-radius : 60px;
+            border-bottom-right-radius : 60px;
+            border-style: dashed;
+            border-width: 2px;
+            /* background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_960_720.jpg); */
+            /* background-size: contain; */
+}
+.nav-list{
+    height: 12vh;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.nav-list li{
+
+list-style: none;
+font-size: 1.5rem;
+font-weight: lighter;
+color: white;
+
+}
+.nav-list li:hover{
+
+color: black;
+cursor: pointer;
+font-weight:bolder;
+background-color: rgba(253, 253, 253, 0.467);
+border-radius: 5px;
+padding-left: 1rem;
+padding-right: 1rem; 
+transition: all ease .8s;
+}
+</style>
+</head>
+<body>
+
+<h1><i>NAV BAR USING FLEX</i></h1>
+<div class="navbar">
+ <ul class="nav-list">
+  <li>Home</li>
+  <li>Services</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+</div>
+
+</body>
+</html>
+
+
